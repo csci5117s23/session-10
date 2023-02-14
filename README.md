@@ -1,17 +1,22 @@
-# Session 04
+# Session 10
 
-The purpose of this activity is twofold: Practice Flask, and make sure we've all gotten hooked into github classrooms.
+The purpose of this activity is to practice getting all the recent "advanced bits" hooked together. You can work on this indivisually, or as a group. It's just practice so it won't be graded, but do try to complete it as a matter of practice.
 
-This activity asks you to get a simple flask project set up -- As you do this, I recommend taking personal notes on what you had to do (You can do that in this file) -- this is the EXACT same initial steps as you'll need for Homework 1.
+The activity here is for you to:
 
-1. Set up a pipenv environment. In linux this was done with a command like `pipenv --python 3.10` although you may need to change the python version
-2. install flask `pipenv install Flask`
-3. Add your Pipfile and Pipfile.lock to git
-4. Setup your `static` and `templates` folder, as well as a basic server file such as `server.py` (I recommend starting by copying out of the [quick start guide](https://flask.palletsprojects.com/en/2.2.x/quickstart/#a-minimal-application)
-5. Add your "fan site" from Sesion 02 to the static files and get it up and running (you may have done this already...)
-6. Add a "quiz" feature. This will ultimately have some question about your fandom and a page to check if the answer is correct -- this should be done with HTML forms and checked server-side, not using javascript. This will have a few core parts:
-  * a GET request which returns a simple page with a question and a form for answering the question
-  * A POST request (that gets called by the form) which checks the answer
-  * A template which shows the person their answer, the correct answer, and has a picture IF the person answered correctly!
-7. Don't forget to commit and push your code!
-8. Don't forget to share your favorite resources with your peers on slack!
+1. Set up a flask project
+2. Set up render hosting
+3. Hook in useful templating
+4. Hook in a database
+5. Hook in auth0 login
+6. Discover how to connect auth0 login to the database.
+
+Your goal is to build out the _strucutral parts_ of a common feature: new user info site. You need:
+
+* A home page. This can be as simple as the word "home" on a page, although it should have a place for a login button
+* A log in button -- that logs the user in sucessfully
+* When logged in -- don't show the log in, show their name and a log out button
+* (the logout button should work)
+* The first time (and only the first time) a user logs in theys hould be taken to an info page (this can just say "info" and be a link to home
+
+As you work -- take notes on the _parts_ of this stack -- there's a lot of setup work, and it pays to remember it all!
